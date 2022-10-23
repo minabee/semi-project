@@ -1,0 +1,276 @@
+/* For medium devices */
+@media screen and (min-width: 767px){
+    /* HEADER */
+    .nav_logo{
+        width: 8rem;
+    }
+    .nav_toggle,
+    .nav_close,
+    .nav_img{
+        display: none;
+    }
+    .nav_list{
+        flex-direction: row;
+        column-gap: 3rem;
+        font-size: 1.2rem;
+    }
+    .nav_link{
+        color: var(--body-color);
+    }
+    .nav_link:hover{
+        color: var(--text-color-light);
+    }
+    /* HOME */
+    .home_container{
+        margin-top: 5rem;
+        grid-template-columns: repeat(2,max-content);
+        justify-content: center;
+        align-items: center;
+        column-gap: 4rem;
+    }
+    .home_leaf:nth-child(6){
+        width: 25px;
+        bottom: 12rem;
+        left: 1rem;
+    }
+    /* BRAND */
+    .background,
+    .center{
+        height: 15rem;
+    }
+    .center h2{
+        padding: 4rem 1rem;
+        font-size: 1.7rem;
+    }
+    .left{
+        background: url(../images/파인트/브라우니라즈베리0.png) no-repeat right -2rem bottom 3rem / 19rem;
+    }
+    .right{
+        background: url(../images/파인트/브라운슈가밀크티0.png) no-repeat left -2rem top 3rem / 19rem;
+    }
+    .top_content h3,
+    .bottom_content h3{
+        padding: 1.5rem 0;
+        font-size: 2.3rem;
+    }
+    .top_content p,
+    .bottom_content p{
+        padding: 1.5rem 0;
+        font-size: 1rem;
+    }
+    .top_image,
+    .bottom_image{
+        width: 21rem;
+    }
+    .top_icon1{
+        position: absolute;
+        width: 20rem;
+        top: 1.3rem;
+    }
+    .top_icon2{
+        position: absolute;
+        width: 5rem;
+        left: 19rem;
+        transform: rotate(-15deg);
+    }
+    .bottom_icon{
+        position: absolute;
+        width: 10rem;
+        right: 1rem;
+        bottom: .5rem;
+    }
+    /* SPECIAL */
+    .special_container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    .special_img{
+        width: 150px;
+    }
+    /* MEMBERSHIP */
+    .items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .kakao{
+        padding: .8rem 1.8rem; 
+        font-size: 1.1rem;
+    }
+    .kakao_img{
+        width: 1.8rem;
+    }
+    .bx{
+        width: 2rem;
+    }
+    .membership_content{
+        width: 80%;
+        font-size: .8rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px){
+    .container{
+        margin: 0 auto;
+    }
+    /* HEADER */
+    .nav{
+        height: 6rem;
+    }
+    .nav_logo{
+        width: 9rem;
+    }
+    .nav_list{
+        column-gap: 4rem;
+        font-size: 1.4rem;
+    }
+    /* HOME */
+    .home_container{
+        margin: 6rem auto 13rem;
+        column-gap: 10rem;
+    }
+    .home_images{
+        padding-top: 1rem;
+        width: 550px;
+        height: 600px;
+    }
+    .home_title{
+        font-size: 2.7rem;
+    }
+    .home_description{
+        font-size: 1.1rem;
+    }
+    .home_button{
+        margin: 1rem 0 0;
+    }
+    .home_milk{
+        width: 550px;
+    }
+    .home_icecream{
+        width: 280px;
+        top: 8.5rem;
+    }
+    .home_strawberry{
+        width: 120px;
+    }
+    .home_cheesecake{
+        width: 115px;
+    }
+    .home_leaf:nth-child(1),
+    .home_leaf:nth-child(4){
+        width: 70px;
+    }
+    .home_leaf:nth-child(2),
+    .home_leaf:nth-child(3),
+    .home_leaf:nth-child(5){
+        width: 60px;
+    }
+    .home_leaf:nth-child(1){
+        top: 1rem;
+        right: 5rem;
+        transform: rotate(90deg);
+    }
+    .home_leaf:nth-child(2){
+        left: 6rem;
+        transform: rotate(0);
+    }
+    .home_leaf:nth-child(3){
+        width: 40px;
+        top: 15rem;
+    }
+    .home_leaf:nth-child(4){
+        bottom: 8rem;
+    }
+    .home_leaf:nth-child(5){
+        right: 12rem;
+        bottom: 2rem;
+        transform: rotate(120deg);
+    }
+    .home_leaf:nth-child(6){
+        width: 40px;
+        left: 6rem;
+        bottom: 17rem;
+    }
+    /* BRAND */
+    .background,
+    .center{
+        height: 22rem;
+    }
+    .center h2{
+        padding: 5.7rem 5.7rem;
+        font-size: 2.5rem;
+    }
+    .left{
+        background: url(../images/파인트/브라우니라즈베리0.png) no-repeat right -4rem bottom 3rem / 28rem;
+    }
+    .right{
+        background: url(../images/파인트/브라운슈가밀크티0.png) no-repeat left -4rem top 3rem / 28rem;
+    }
+    .top_content h3,
+    .bottom_content h3{
+        padding: 3rem 0;
+        font-size: 3.7rem;
+        font-weight: 900;
+    }
+    .top_content p,
+    .bottom_content p{
+        padding: 1.7rem 0;
+        font-size: 1.3rem;
+    }
+    .top_image,
+    .bottom_image{
+        width: 35rem;
+    }
+    .top_icon1{
+        position: absolute;
+        width: 37rem;
+        top: 1.2rem;
+        left: 3rem;
+    }
+    .top_icon2{
+        position: absolute;
+        width: 9rem;
+        left: 35rem;
+        transform: rotate(70deg);
+    }
+    .bottom_icon{
+        position: absolute;
+        width: 16rem;
+        right: 8rem;
+        bottom: .5rem;
+    }
+    /* SPECIAL */
+    .special_container{
+        padding-top: 2rem;
+    }
+    .special_card{
+        padding: 3rem 2rem 2rem;
+    }
+    .special_img{
+        width: 230px;
+        margin-bottom: 1rem;
+    }
+    .special_description{
+        font-style: var(--small-font-size);
+    }
+    .special_icon{
+        font-size: 1.5rem;
+    }
+    /* MEMBERSHIP */
+    .membership{
+        margin-top: 5rem;
+    }
+    .membership_content{
+        margin: 0 16rem;
+    }
+    /* FOOTER */
+    .footer_container{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 10rem;
+    }
+    .footer_right{
+        padding-top: 2rem;
+    }
+    .social_list{
+        margin-top: 2rem;
+    }
+}
