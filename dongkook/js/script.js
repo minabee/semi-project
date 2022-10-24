@@ -1,40 +1,21 @@
 //NAV DROPDOWN
-// $(function(){
-//     //on : 24시간 모니터링
-//     $(window).on('resize load', resize);
-// });
-
-// function resize(){
-//     if($(window).width() > 1023){
-//         $(".gnb, .header_bg").hover(function(){
-//             $(".sub, .header_bg").stop().show();
-//         },function(){
-//             $(".sub, .header_bg").stop().hide();
-//         });
-//     }else{
-//         $(".gnb_title").click(function(){
-//             $(this).toggleClass("on");
-//             $(this).parent().find(".sub").stop().slideToggle();
-//         });
-//     }
-// }
 $('.gnb, .header_bg').on('mouseover',function(){
     if($( window ).width() > 1023){
         $(".sub, .header_bg").stop().show();
         
     }
-})
+});
 $('.gnb, .header_bg').on('mouseleave',function(){
     if($( window ).width() > 1023){
         $(".sub, .header_bg").stop().hide();
     }
-})
+});
 $('.gnb_title').on('click',function(){
     if($( window ).width() <= 1023){
         $(this).toggleClass("on");
         $(this).parent().find(".sub").stop().slideToggle();
     }
-})
+});
 
 //SHOW NAV BACKGROUND
 const scrollNav = document.getElementById('header')
@@ -64,9 +45,9 @@ if(navClose){
 
 //HOME,BRAND SWIPER
 let homeSwiper = new Swiper(".home-swiper",{
-    // autoplay:{
-    //     delay:2500,
-    // },
+    autoplay:{
+        delay:2500,
+    },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -79,9 +60,9 @@ let barndSwiper = new Swiper(".brand-swiper",{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-    // autoplay:{
-    //     delay:2500,
-    // },
+    autoplay:{
+        delay:2500,
+    },
     loop: true,
     pagination: {
       el: ".swiper-pagination",

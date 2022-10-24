@@ -8,8 +8,8 @@
         position: fixed;
         width: 100vw;
         top: 0;
-        right: -9000px;
-        transition: all 1.5s ease;
+        right: -1000px;
+        transition: all 1s ease;
         background-color: #fff;
     }
     .gnb{
